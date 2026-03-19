@@ -3,6 +3,7 @@ void main(){
 int n,m;
 printf("Enter n, m : ");
 scanf("%d%d",&n,&m);
+if (n==m){
 int a[n][m];
 for (int i=0;i<n;i++){
 for (int j=0;j<m;j++){
@@ -10,18 +11,23 @@ printf("Enter a[%d][%d] : ",i,j);
 scanf("%d",&a[i][j]);
 }
 }
-for(int i=0;i<n;i++){
-int r=0;
-for (int j=0;j<m;j++){
-r+=a[i][j];
-}
-printf("Sum of row {%d} is %d\n",i,r);
-}
-for(int j=0;j<m;j++){
-int c=0;
+printf("Matrix : \n");
 for (int i=0;i<n;i++){
-c+=a[i][j];
+for (int j=0;j<m;j++){
+printf("%d ",a[i][j]);
 }
-printf("Sum of col {%d} is %d\n",j,c);
+printf("\n");
+}
+int x,c=0;
+printf("Enter x : ");
+scanf("%d",&x);
+for (int i=0;i<n;i++){
+for(int j=0;i>=j;j++){
+if (x < a[i][j]) c++;
 }
 }
+printf("Count : %d",c);
+}
+else printf("Not a square matrix");
+}
+
