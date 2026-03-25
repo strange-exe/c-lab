@@ -1,18 +1,20 @@
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 void main(){
 char a[100];
 printf("Enter string : ");
 gets(a);
-// fgets(a,100,stdin);
-printf("Entered string : ");
-int c=puts(a);
-char b[100];
 int i=0;
-for (i=0;a[i];i++){
-b[i]=a[c-i-2];
+while (a[i]) i++;
+int j=0;
+i--;
+char t;
+while (j<i){
+t=a[j];
+a[j]=a[i];
+a[i]=t;
+j++,i--;
 }
-b[i]='\0';
-printf("Reversed string : ");
-puts(b);
+printf("Reversed : ");
+puts(a);
 }
