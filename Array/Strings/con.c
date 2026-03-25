@@ -12,6 +12,7 @@ while (a[i]) i++;
 for (int j=0;b[j];j++,i++){
 a[i]=b[j];
 }
+a[i]='\0';
 printf("Concatinated : ");
 puts(a);
 }
