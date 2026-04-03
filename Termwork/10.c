@@ -13,15 +13,10 @@ int main(){
     char email[100],defemail[100]="abhinesh.exe@gmail.com",*e,*d;
     printf("\n*****INPUT*****\n\n");
     printf("Enter email : ");
-    fgets(email,sizeof(email),stdin);
+    gets(email);
     e=email;
     d=defemail;
     int i=0,j=0;
-    while (e[j]){
-        if (e[j]=='\n') e[j]='\0';
-        j++;
-    }
-    e[j]='\0';
     while (e[i]){
         if (e[i]>='A' && e[i]<='Z') e[i]+=32;
         i++;
