@@ -1,5 +1,11 @@
-/* Q-6 Write a C program to insert n elements in an array and replace each element of the array by its 
-reverse. */
+/*Name : Abhinesh Kumar Gangwar
+University Roll No. : 2028614
+Section : G
+
+Q-6 Write a C program to insert n elements in an array and replace each element of the array by its 
+reverse.
+*/
+
 #include <stdio.h>
 int rev(int n){
     int s=0;
@@ -11,6 +17,7 @@ int rev(int n){
 }
 int main(){
     int n;
+    printf("\n*****INPUT*****\n\n");
     printf("Enter n : ");
     scanf("%d",&n);
     int a[n];
@@ -21,7 +28,8 @@ int main(){
     for (int i=0;i<n;i++){
         a[i]=rev(a[i]);
     }
-    printf("\nArray : ");
+    printf("\n*****OUTPUT*****\n\n");
+    printf("Array : ");
     for (int i=0;i<n;i++){
         printf("%d ",a[i]);
     }

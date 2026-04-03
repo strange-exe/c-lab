@@ -1,15 +1,22 @@
-/* Q-1 Write a C program to find roots of quadratic equation.  
+/*Name : Abhinesh Kumar Gangwar
+University Roll No. : 2028614
+Section : G
+
+Q-1 Write a C program to find roots of quadratic equation.  
 Sample Input: Enter coefficients a, b and c: 4 1 0  
 Sample Output: Roots are real numbers..... Roots are: 0.00 and -0.25 
 */
+
 #include <stdio.h>
 #include <math.h>
 void main() {
     int a,b,c;
     float x,y,d;
+    printf("\n*****INPUT*****\n\n");
     printf("Enter coefficients a, b and c: ");
     scanf("%d %d %d",&a,&b,&c);
-    d=b*b-4.0*a*c;
+    d=b*b-(4.0*a*c);
+    printf("\n*****OUTPUT*****\n\n");
     if (d>0) {
         x=(-b+sqrt(d))/(2.0*a);
         y=(-b-sqrt(d))/(2.0*a);

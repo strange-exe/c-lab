@@ -1,4 +1,10 @@
-/* Q-3 Write a C program to print the Fibonacci Series upto N Terms using recursion */
+/*Name : Abhinesh Kumar Gangwar
+University Roll No. : 2028614
+Section : G
+
+Q-3 Write a C program to print the Fibonacci Series upto N Terms using recursion.
+*/
+
 #include <stdio.h>
 void fib(int n,int a,int b){
     int c;
@@ -11,8 +17,10 @@ void fib(int n,int a,int b){
 }
 int main(){
     int n,a=0,b=1;
+    printf("\n*****INPUT*****\n\n");
     printf("Enter terms : ");
     scanf("%d",&n);
+    printf("\n*****OUTPUT*****\n\n");
     if (n==1) printf("%d",a);
     else if (n>=2) printf("%d %d ",a,b);fib(n-2,a,b);
     printf("\n");
