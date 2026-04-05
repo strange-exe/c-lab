@@ -23,5 +23,4 @@ int main(){
     }
     printf("\n*****OUTPUT*****\n\n");
     strcmp(e,d)?printf("Not Valid\n"):printf("Valid\n");
-    return 1;
 }
